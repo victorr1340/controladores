@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licencias de Software - Tienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SoftwareStore</h1>
+        <p>Tu tienda de confianza para licencias digitales</p>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2>Productos Destacados</h2>
+            <div id="featured-container" class="grid-container"></div>
+        </section>
+
+       
+        <section>
+            <h2>Mejores Ofertas</h2>
+            <div id="offers-container" class="grid-container"></div>
+        </section>
+
+        
+        <section>
+            <h2>Últimas Versiones</h2>
+            <div id="latest-container" class="grid-container"></div>
+        </section>
+
+        
+        <section>
+            <h2>Todas las Licencias</h2>
+            <div class="filter-bar">
+                <input type="text" id="filter-input" placeholder="Buscar software...">
+                <select id="sort-select">
+                    <option value="default">Ordenar por...</option>
+                    <option value="price-asc">Precio: Menor a Mayor</option>
+                    <option value="price-desc">Precio: Mayor a Menor</option>
+                </select>
+            </div>
+            <div id="all-container" class="grid-container"></div>
+        </section>
+    </main>
+
+    
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h3>¡Compra Exitosa!</h3>
+            <p>Tu clave de licencia es:</p>
+            <code id="modal-key"></code>
+        </div>
+    </div>
+
+ 
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
